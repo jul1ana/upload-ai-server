@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "dns, site, internet, domínio, ip"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "017d960e-9fbc-46fa-b5c1-48d399b959a5",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
